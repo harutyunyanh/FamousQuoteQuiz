@@ -1,0 +1,9 @@
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.deps.json
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.dll
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.pdb
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.AssemblyInfoInputs.cache
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.AssemblyInfo.cs
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.dll
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.pdb

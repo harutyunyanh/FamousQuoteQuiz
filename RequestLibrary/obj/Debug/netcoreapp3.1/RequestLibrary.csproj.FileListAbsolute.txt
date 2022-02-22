@@ -1,0 +1,10 @@
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\bin\Debug\netcoreapp3.1\RequestLibrary.deps.json
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\bin\Debug\netcoreapp3.1\RequestLibrary.dll
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\bin\Debug\netcoreapp3.1\RequestLibrary.pdb
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.AssemblyInfoInputs.cache
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.AssemblyInfo.cs
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.dll
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.pdb
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.csproj.AssemblyReference.cache

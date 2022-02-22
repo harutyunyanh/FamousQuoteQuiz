@@ -1,0 +1,13 @@
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\bin\Debug\netcoreapp3.1\DataBaseAccessLibrary.deps.json
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\bin\Debug\netcoreapp3.1\DataBaseAccessLibrary.runtimeconfig.json
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\bin\Debug\netcoreapp3.1\DataBaseAccessLibrary.runtimeconfig.dev.json
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\bin\Debug\netcoreapp3.1\DataBaseAccessLibrary.dll
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\bin\Debug\netcoreapp3.1\DataBaseAccessLibrary.pdb
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.AssemblyInfo.cs
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.dll
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.pdb
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.genruntimeconfig.cache
+C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.csproj.AssemblyReference.cache
