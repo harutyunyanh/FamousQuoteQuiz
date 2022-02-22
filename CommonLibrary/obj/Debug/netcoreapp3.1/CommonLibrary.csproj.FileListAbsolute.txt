@@ -7,3 +7,12 @@ C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcorea
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.dll
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.pdb
+D:\Gits\FamousQuoteQuiz\CommonLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.deps.json
+D:\Gits\FamousQuoteQuiz\CommonLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.dll
+D:\Gits\FamousQuoteQuiz\CommonLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.pdb
+D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.AssemblyInfoInputs.cache
+D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.AssemblyInfo.cs
+D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.csproj.CoreCompileInputs.cache
+D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.dll
+D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.pdb

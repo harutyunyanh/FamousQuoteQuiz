@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "m4tWA3leCOLyn8xTbTYo7TZP/vHODfWPYoPhtmuFiOruCqVcoT54LxWTZN65EqmvckGe+W5fbicq3UCVPQViJQ==",
-  "success": true,
+  "dgSpecHash": "CgQuk+RcLlqqKjYhpH0/x8gsFmzSXTFdSop9kKBlRZjUPlWDT9AxYD9+FWebCrL1EfLR8K3rKCH12PyMSS9TpA==",
+  "success": false,
   "projectFilePath": "D:\\Gits\\FamousQuoteQuiz\\WebApplicationBlazor\\WebApplicationBlazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hovhannes\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
@@ -42,5 +42,15 @@
     "C:\\Users\\Hovhannes\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\Hovhannes\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project CommonLibrary is not compatible with netstandard2.1 (.NETStandard,Version=v2.1). Project CommonLibrary supports: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "CommonLibrary",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.1"
+      ]
+    }
+  ]
 }

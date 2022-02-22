@@ -430,6 +430,16 @@
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
+      },
+      "CommonLibrary/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/CommonLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLibrary.dll": {}
+        }
       }
     }
   },
@@ -1626,10 +1636,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CommonLibrary/1.0.0": {
+      "type": "project",
+      "path": "../CommonLibrary/CommonLibrary.csproj",
+      "msbuildProject": "../CommonLibrary/CommonLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "CommonLibrary >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.1",
       "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.1",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.1",
@@ -1663,7 +1679,11 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Gits\\FamousQuoteQuiz\\CommonLibrary\\CommonLibrary.csproj": {
+              "projectPath": "D:\\Gits\\FamousQuoteQuiz\\CommonLibrary\\CommonLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1713,5 +1733,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project CommonLibrary is not compatible with netstandard2.1 (.NETStandard,Version=v2.1). Project CommonLibrary supports: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "CommonLibrary",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.1"
+      ]
+    }
+  ]
 }

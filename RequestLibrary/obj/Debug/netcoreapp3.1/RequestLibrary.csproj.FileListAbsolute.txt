@@ -8,3 +8,10 @@ C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcore
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.dll
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.pdb
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.csproj.AssemblyReference.cache
+D:\Gits\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.csproj.AssemblyReference.cache
+D:\Gits\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gits\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.AssemblyInfoInputs.cache
+D:\Gits\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.AssemblyInfo.cs
+D:\Gits\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.csproj.CoreCompileInputs.cache
+D:\Gits\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.dll
+D:\Gits\FamousQuoteQuiz\RequestLibrary\obj\Debug\netcoreapp3.1\RequestLibrary.pdb

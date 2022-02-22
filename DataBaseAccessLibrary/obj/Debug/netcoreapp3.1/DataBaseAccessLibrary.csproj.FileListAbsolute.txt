@@ -11,3 +11,15 @@ C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.pdb
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.genruntimeconfig.cache
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.csproj.AssemblyReference.cache
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\bin\Debug\netcoreapp3.1\DataBaseAccessLibrary.deps.json
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\bin\Debug\netcoreapp3.1\DataBaseAccessLibrary.runtimeconfig.json
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\bin\Debug\netcoreapp3.1\DataBaseAccessLibrary.runtimeconfig.dev.json
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\bin\Debug\netcoreapp3.1\DataBaseAccessLibrary.dll
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\bin\Debug\netcoreapp3.1\DataBaseAccessLibrary.pdb
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.AssemblyInfoInputs.cache
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.AssemblyInfo.cs
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.csproj.CoreCompileInputs.cache
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.dll
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.pdb
+D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.genruntimeconfig.cache

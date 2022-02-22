@@ -11,3 +11,16 @@ C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\LogLibrary\obj\Debug\netcoreapp3
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\LogLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.dll
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\LogLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.pdb
 C:\Users\Hovhannes\source\repos\FamousQuoteQuiz\LogLibrary\obj\Debug\netcoreapp3.1\LogLibrary.csproj.CopyComplete
+D:\Gits\FamousQuoteQuiz\LogLibrary\bin\Debug\netcoreapp3.1\LogLibrary.deps.json
+D:\Gits\FamousQuoteQuiz\LogLibrary\bin\Debug\netcoreapp3.1\LogLibrary.dll
+D:\Gits\FamousQuoteQuiz\LogLibrary\bin\Debug\netcoreapp3.1\LogLibrary.pdb
+D:\Gits\FamousQuoteQuiz\LogLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.dll
+D:\Gits\FamousQuoteQuiz\LogLibrary\bin\Debug\netcoreapp3.1\CommonLibrary.pdb
+D:\Gits\FamousQuoteQuiz\LogLibrary\obj\Debug\netcoreapp3.1\LogLibrary.csproj.AssemblyReference.cache
+D:\Gits\FamousQuoteQuiz\LogLibrary\obj\Debug\netcoreapp3.1\LogLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gits\FamousQuoteQuiz\LogLibrary\obj\Debug\netcoreapp3.1\LogLibrary.AssemblyInfoInputs.cache
+D:\Gits\FamousQuoteQuiz\LogLibrary\obj\Debug\netcoreapp3.1\LogLibrary.AssemblyInfo.cs
+D:\Gits\FamousQuoteQuiz\LogLibrary\obj\Debug\netcoreapp3.1\LogLibrary.csproj.CoreCompileInputs.cache
+D:\Gits\FamousQuoteQuiz\LogLibrary\obj\Debug\netcoreapp3.1\LogLibrary.csproj.CopyComplete
+D:\Gits\FamousQuoteQuiz\LogLibrary\obj\Debug\netcoreapp3.1\LogLibrary.dll
+D:\Gits\FamousQuoteQuiz\LogLibrary\obj\Debug\netcoreapp3.1\LogLibrary.pdb

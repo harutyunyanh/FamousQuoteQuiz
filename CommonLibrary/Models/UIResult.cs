@@ -24,6 +24,12 @@ namespace CommonLibrary.Models
             this.Status = status;
             this.Message = message;
         }
+        public UIResult(UIResult<string> subResult)
+        {
+            Status = subResult.Status;
+            Message = subResult.Message;
+        }
+        public bool IsSuccessful() => Status == UIResultStatus.Success;
 
         public UIResult()
         {
