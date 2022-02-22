@@ -5727,11 +5727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\DataBaseAccessLibrary\\DataBaseAccessLibrary.csproj",
+      "projectUniqueName": "D:\\Gits\\FamousQuoteQuiz\\DataBaseAccessLibrary\\DataBaseAccessLibrary.csproj",
       "projectName": "DataBaseAccessLibrary",
-      "projectPath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\DataBaseAccessLibrary\\DataBaseAccessLibrary.csproj",
+      "projectPath": "D:\\Gits\\FamousQuoteQuiz\\DataBaseAccessLibrary\\DataBaseAccessLibrary.csproj",
       "packagesPath": "C:\\Users\\Hovhannes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\DataBaseAccessLibrary\\obj\\",
+      "outputPath": "D:\\Gits\\FamousQuoteQuiz\\DataBaseAccessLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hovhannes\\AppData\\Roaming\\NuGet\\NuGet.Config",

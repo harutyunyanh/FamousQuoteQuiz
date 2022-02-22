@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\CommonLibrary\\CommonLibrary.csproj",
+      "projectUniqueName": "D:\\Gits\\FamousQuoteQuiz\\CommonLibrary\\CommonLibrary.csproj",
       "projectName": "CommonLibrary",
-      "projectPath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\CommonLibrary\\CommonLibrary.csproj",
+      "projectPath": "D:\\Gits\\FamousQuoteQuiz\\CommonLibrary\\CommonLibrary.csproj",
       "packagesPath": "C:\\Users\\Hovhannes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\CommonLibrary\\obj\\",
+      "outputPath": "D:\\Gits\\FamousQuoteQuiz\\CommonLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hovhannes\\AppData\\Roaming\\NuGet\\NuGet.Config",

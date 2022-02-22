@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NeeDtZzdJFEUseygjbo2ocX1X5N5GaFEiHbNwJJG3Vssj6Vv6TEIllIfmc7nlVkMqT9TOHi3T9Ge/NZbfELCuw==",
+  "dgSpecHash": "x0YxZ556g7jKylF5SiWYy6lk4XSVsU63Jhfyek8Mb5E+WVjyLUJGdpeYzhFh/yDdoM3draJMfyYeJdnsg0mnOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\LogLibrary\\LogLibrary.csproj",
+  "projectFilePath": "D:\\Gits\\FamousQuoteQuiz\\LogLibrary\\LogLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hovhannes\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Hovhannes\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.0.4\\microsoft.dotnet.platformabstractions.2.0.4.nupkg.sha512",

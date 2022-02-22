@@ -3654,11 +3654,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\LogLibrary\\LogLibrary.csproj",
+      "projectUniqueName": "D:\\Gits\\FamousQuoteQuiz\\LogLibrary\\LogLibrary.csproj",
       "projectName": "LogLibrary",
-      "projectPath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\LogLibrary\\LogLibrary.csproj",
+      "projectPath": "D:\\Gits\\FamousQuoteQuiz\\LogLibrary\\LogLibrary.csproj",
       "packagesPath": "C:\\Users\\Hovhannes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\LogLibrary\\obj\\",
+      "outputPath": "D:\\Gits\\FamousQuoteQuiz\\LogLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hovhannes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3676,8 +3676,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\CommonLibrary\\CommonLibrary.csproj": {
-              "projectPath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\CommonLibrary\\CommonLibrary.csproj"
+            "D:\\Gits\\FamousQuoteQuiz\\CommonLibrary\\CommonLibrary.csproj": {
+              "projectPath": "D:\\Gits\\FamousQuoteQuiz\\CommonLibrary\\CommonLibrary.csproj"
             }
           }
         }

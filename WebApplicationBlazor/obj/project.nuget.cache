@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5jmQULdtoDC783exsdwEFGBbKIdoM8UvxZNC9RVr6qOYUn2p3pLiI8ZTNX+DmT1V5ZcPyQ5EWBVilV8g2YiP9g==",
+  "dgSpecHash": "m4tWA3leCOLyn8xTbTYo7TZP/vHODfWPYoPhtmuFiOruCqVcoT54LxWTZN65EqmvckGe+W5fbicq3UCVPQViJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\WebApplicationBlazor\\WebApplicationBlazor.csproj",
+  "projectFilePath": "D:\\Gits\\FamousQuoteQuiz\\WebApplicationBlazor\\WebApplicationBlazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hovhannes\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\Hovhannes\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",

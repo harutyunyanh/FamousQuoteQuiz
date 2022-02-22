@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3B4OTs0Tn86FDP+cofzN/g5sSwmuU3ISYXixyqo0e1jBomfTo0159MQ9RFJL6KZnwLwKaVYhrPwqAVmY14L3tA==",
+  "dgSpecHash": "9iEsVynGXMkZf+JyFYo0uZ0bO3oRrJxFfGWxKtkhYeM39C42wc1jFXZLsNST624DJFNd4OcpYEMlvWpa5YRZHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\GatewayWebService\\GatewayWebService.csproj",
+  "projectFilePath": "D:\\Gits\\FamousQuoteQuiz\\GatewayWebService\\GatewayWebService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hovhannes\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Hovhannes\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

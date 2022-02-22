@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Knv6QmYjmjPVAO5EDKeYmM852SOFXlUWrZRU2EKfRCE4ujOnjzfcZJhHfwqNqXa5xcY9Fv+0BZ5a5+E22EbucA==",
+  "dgSpecHash": "FEom9EFVa4yUOlpof6NFrefxAE1CpztJ9svU2rSqKVOxu6Bg4i9yd9c2aJKcN7tGhYUpxgtz71wgZbKxOChg/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\DataBaseAccessLibrary\\DataBaseAccessLibrary.csproj",
+  "projectFilePath": "D:\\Gits\\FamousQuoteQuiz\\DataBaseAccessLibrary\\DataBaseAccessLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hovhannes\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Hovhannes\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

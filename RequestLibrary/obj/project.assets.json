@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\RequestLibrary\\RequestLibrary.csproj",
+      "projectUniqueName": "D:\\Gits\\FamousQuoteQuiz\\RequestLibrary\\RequestLibrary.csproj",
       "projectName": "RequestLibrary",
-      "projectPath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\RequestLibrary\\RequestLibrary.csproj",
+      "projectPath": "D:\\Gits\\FamousQuoteQuiz\\RequestLibrary\\RequestLibrary.csproj",
       "packagesPath": "C:\\Users\\Hovhannes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hovhannes\\source\\repos\\FamousQuoteQuiz\\RequestLibrary\\obj\\",
+      "outputPath": "D:\\Gits\\FamousQuoteQuiz\\RequestLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hovhannes\\AppData\\Roaming\\NuGet\\NuGet.Config",
