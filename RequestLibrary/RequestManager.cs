@@ -66,7 +66,7 @@ namespace RequestLibrary
                     catch (Exception ex)
                     {
                         LoggerClass.Log(LogLevel.ERROR, $"RequestLibrary :: RequestManager :: Make :: Invalid request: {ex}");
-                        return new Result<string>(ResultLevel.Warning, Errors.RequestLibrary_Request_Make_InvalidRequest);
+                        return new UIResult<string>(UIResultStatus.Warning, Errors.RequestLibrary_Request_Make_InvalidRequest);
                     }
                     LoggerClass.Log(LogLevel.TRACE, $"RequestLibrary :: RequestManager :: Make :: Response message: { JsonConvert.SerializeObject(responseMessage) }");
                 }
@@ -74,18 +74,18 @@ namespace RequestLibrary
                 {
                     string responseString = responseMessage.Content.ReadAsStringAsync().Result;
                     LoggerClass.Log(LogLevel.DEBUG, $"RequestLibrary :: RequestManager :: Make :: Successfully finished: { responseString }");
-                    return new Result<string>(ResultLevel.Success, responseString);
+                    return new UIResult<string>(UIResultStatus.Success, responseString);
                 }
                 else
                 {
                     LoggerClass.Log(LogLevel.WARN, "RequestLibrary :: RequestManager :: Make :: Not Success Status Code");
-                    return new Result<string>(ResultLevel.Warning, Errors.RequestLibrary_Request_Make_NotSuccessStatusCode);
+                    return new UIResult<string>(UIResultStatus.Warning, Errors.RequestLibrary_Request_Make_NotSuccessStatusCode);
                 }
             }
             catch (Exception ex)
             {
                 LoggerClass.Log(LogLevel.ERROR, $"RequestLibrary :: RequestManager :: Make :: UNHANDELED CASE: {ex}");
-                return new Result<string>(ResultLevel.Error, Errors.RequestLibrary_Request_Make_Exception);
+                return new UIResult<string>(UIResultStatus.Error, Errors.RequestLibrary_Request_Make_Exception);
             }
         }
 
@@ -125,9 +125,60 @@ namespace RequestLibrary
             catch (Exception ex)
             {
                 LoggerClass.Log(LogLevel.ERROR, $"RequestLibrary :: RequestManager :: Make<T> :: UNHANDELED CASE {ex}");
-                return new Result<T>(ResultLevel.Error, Errors.RequestLibrary_Request_Make_Exception);
+                return new UIResult<T>(UIResultStatus.Error, Errors.RequestLibrary_Request_Make_Exception);
             }
         }
 
+
+        /// <summary>
+        /// Used to make web requests to internal resourses and returns generic object
+        /// </summary>
+        /// <param name="method">Request Method (enum)</param>
+        /// <param name="url">Request URL</param>
+        /// <param name="body">Request Body (optional)</param>
+        /// <param name="headers">Request Body (optional)</param>
+
+        public static UIResult<T> MakeInternal<T>(HttpMethod method, string url, object body = null, string[][] headers = null)
+        {
+            try
+            {
+                LoggerClass.Log(LogLevel.DEBUG, $"RequestLibrary :: RequestManager :: MakeInternal<T> :: Invoced with params => method: { method.ToString() }, url: { url }, body: { JsonConvert.SerializeObject(body) }");
+                UIResult<string> result = Make(method, url, body, null, headers);
+                LoggerClass.Log(LogLevel.TRACE, $"RequestLibrary :: RequestManager :: MakeInternal<T> :: Response from [Make] function: { JsonConvert.SerializeObject(result) }");
+                if (result.IsSuccessful())
+                {
+                    try
+                    {
+                        UIResult<T> responseObject = JsonConvert.DeserializeObject<UIResult<T>>(result.Data);
+                        LoggerClass.Log(LogLevel.DEBUG, $"RequestLibrary :: RequestManager :: MakeInternal<T> :: responseObject: {JsonConvert.SerializeObject(responseObject)}");
+                        if (responseObject.IsSuccessful())
+                        {
+                            LoggerClass.Log(LogLevel.DEBUG, $"RequestLibrary :: RequestManager :: MakeInternal<T> :: Successfully finished: { JsonConvert.SerializeObject(responseObject) }");
+                            return responseObject;
+                        }
+                        else
+                        {
+                            LoggerClass.Log(LogLevel.WARN, "RequestLibrary :: RequestManager :: MakeInternal<T> :: Make function call failed");
+                            return new UIResult<T>(responseObject);
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        LoggerClass.Log(LogLevel.WARN, "RequestLibrary :: RequestManager :: MakeInternal<T> :: Unable to parse json to class specified");
+                        return new UIResult<T>(UIResultStatus.Warning, Errors.RequestLibrary_Request_Make_JsonToObjectParseFailure);
+                    }
+                }
+                else
+                {
+                    LoggerClass.Log(LogLevel.WARN, "RequestLibrary :: RequestManager :: MakeInternal<T> :: Make function call failed");
+                    return new UIResult<T>(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                LoggerClass.Log(LogLevel.ERROR, $"RequestLibrary :: RequestManager :: MakeInternal<T> :: UNHANDELED CASE: {ex}");
+                return new UIResult<T>(UIResultStatus.Error, Errors.RequestLibrary_Request_Make_Exception);
+            }
+        }
     }
 }

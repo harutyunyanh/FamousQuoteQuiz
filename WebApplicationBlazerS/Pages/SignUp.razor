@@ -1,0 +1,49 @@
+﻿@page "/SignUp"
+@using WebApplicationBlazerS.Helper
+@using RequestLibrary
+@using CommonLibrary.DBModels
+@using CommonLibrary.Models
+@using HttpMethod = CommonLibrary.Models.HttpMethod
+@inject NavigationManager NavManager
+@layout EmptyLayout
+<h3>SignUp</h3>
+<div style=" margin: auto; width: 50%; border: 3px solid gray; padding: 10px;">
+
+    <input placeholder="Name" id="name" type="text" @bind="@nameValue" @oninput="@((e) => { nameValue=(string)e.Value;})" />
+    <br />
+    <input placeholder="SurName" id="sname" type="text" @bind="@snameValue" @oninput="@((e) => { snameValue=(string)e.Value;})" />
+    <br />
+    <input placeholder="Login" id="loginin" type="text" @bind="@loginValue" @oninput="@((e) => { loginValue=(string)e.Value;})" />
+    <br />
+    <input placeholder="Password" id="Password" type="password" @bind="@passValue" @oninput="@((e) => { passValue=(string)e.Value;})" />
+    <br />
+    <input id="submit" type="button" value="SignUp" @onclick="SignUpBtn" />
+    <input id="Back" type="button" value="Back" @onclick="BackBtn" />
+
+
+</div>
+@code {
+    private string nameValue { get; set; }
+    private string snameValue { get; set; }
+    private string loginValue { get; set; }
+    private string passValue { get; set; }
+
+    private void BackBtn()
+    {
+        NavManager.NavigateTo("/");
+    }
+
+    private void SignUpBtn()
+    {
+        var result = RequestManager.MakeInternal<LoginResponse>(
+              method: HttpMethod.POST,
+              body: new SignModel() { Name = nameValue,SurName = snameValue,Login = loginValue, Password = passValue },
+              url: $"{ServicesConfigurator.GatewayWebServiceURL}Account/client/signup"
+          );
+
+        if (result.IsSuccessful())
+        {
+            NavManager.NavigateTo("/old");
+        }
+    }
+}

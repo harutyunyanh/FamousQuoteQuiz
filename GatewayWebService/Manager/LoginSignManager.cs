@@ -37,8 +37,7 @@ namespace GatewayWebService.Manager
                     }
                     else
                     {
-                        return new UIResult<LoginResponse>(UIResultStatus.Warning,"Login Faild");
-
+                        return new UIResult<LoginResponse>(UIResultStatus.Warning, Errors.Login_Faild);
                     }
                 };
 

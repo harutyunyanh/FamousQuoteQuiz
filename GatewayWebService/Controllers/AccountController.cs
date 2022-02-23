@@ -19,8 +19,8 @@ namespace GatewayWebService.Controllers
             return LoginSignManager.ClientLogin(loginmodel);
         }
 
-        [HttpPost("client/sign")]
-        public UIResult<LoginResponse> ClientSign(SignModel signmodel)
+        [HttpPost("client/signup")]
+        public UIResult<LoginResponse> ClientSignUp(SignModel signmodel)
         {
             return LoginSignManager.ClientSign(signmodel);
         }

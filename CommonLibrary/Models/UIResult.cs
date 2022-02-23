@@ -17,14 +17,15 @@ namespace CommonLibrary.Models
         public UIResult(UIResultStatus status, Error error)
         {
             this.Status = status;
-            this.Message = error.Code + error.Message;
+            this.Message = error.Code;
         }
-        public UIResult(UIResultStatus status, string message)
-        {
-            this.Status = status;
-            this.Message = message;
-        }
+  
         public UIResult(UIResult<string> subResult)
+        {
+            Status = subResult.Status;
+            Message = subResult.Message;
+        }
+        public UIResult(UIResult<T> subResult)
         {
             Status = subResult.Status;
             Message = subResult.Message;

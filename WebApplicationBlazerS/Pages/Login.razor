@@ -1,0 +1,44 @@
+﻿@page "/"
+@using WebApplicationBlazerS.Helper
+@using RequestLibrary
+@using CommonLibrary.DBModels
+@using CommonLibrary.Models
+@using HttpMethod = CommonLibrary.Models.HttpMethod
+
+@inject NavigationManager NavManager
+@layout EmptyLayout
+<h3>Login</h3>
+<div style=" margin: auto; width: 50%; border: 3px solid gray; padding: 10px;">
+
+    <input placeholder="Login" id="loginin" type="text" @bind="@loginValue" @oninput="@((e) => { loginValue=(string)e.Value;})" />
+    <br />
+    <input placeholder="Password" id="Password" type="password" @bind="@passValue" @oninput="@((e) => { passValue=(string)e.Value;})" />
+    <br />
+    <input id="submit" type="button" value="Login" @onclick="LoginBtn" />
+    <input id="submit" type="button" value="SignUp" @onclick="SignUpBtn" />
+
+</div>
+@code {
+    private string loginValue { get; set; }
+    private string passValue { get; set; }
+
+    private void LoginBtn()
+    {
+        var result = RequestManager.MakeInternal<LoginResponse>(
+                method: HttpMethod.PATCH,
+                body: new LoginModel() {Login = loginValue,Password = passValue },
+                url: $"{ServicesConfigurator.GatewayWebServiceURL}Account/client/login"
+            );
+
+        if(result.IsSuccessful())
+        {
+            NavManager.NavigateTo("/old");
+        }
+
+    }
+
+    private void SignUpBtn()
+    {
+        NavManager.NavigateTo("/SignUp");
+    }
+}
