@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Radzen.Blazor" Version="3.16.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj" />
     <ProjectReference Include="..\LogLibrary\LogLibrary.csproj" />
     <ProjectReference Include="..\RequestLibrary\RequestLibrary.csproj" />

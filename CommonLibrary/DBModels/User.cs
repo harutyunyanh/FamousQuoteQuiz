@@ -5,7 +5,7 @@ using System.Text;
 namespace CommonLibrary.DBModels
 {
 
-    public class GetUserDetails
+    public class GetUserDetailsModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -14,7 +14,7 @@ namespace CommonLibrary.DBModels
         public DateTime CreationTime { get; set; }
         public List<GetQuizModel> QuizList { get; set; }
     }
-    public class GetUserModel
+    public class GetUserListModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

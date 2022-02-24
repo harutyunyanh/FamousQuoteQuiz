@@ -76,6 +76,55 @@ using WebApplicationBlazerS.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
+using WebApplicationBlazerS.Helper;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
+using RequestLibrary;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
+using CommonLibrary.DBModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
+using CommonLibrary.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
+using HttpMethod = CommonLibrary.Models.HttpMethod;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
+using Radzen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
+using Radzen.Blazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\Pages\FetchData.razor"
 using WebApplicationBlazerS.Data;
 
@@ -91,14 +140,139 @@ using WebApplicationBlazerS.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 39 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\Pages\FetchData.razor"
+#line 78 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\Pages\FetchData.razor"
        
+    string text = "Hi";
     private WeatherForecast[] forecasts;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        //forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
     }
+
+
+
+
+    RadzenDataGrid<GetUserListModel> userGrid;
+    IList<GetUserListModel> users;
+    // IEnumerable<GetUserListModel> userdata;
+    //IEnumerable<Employee> employees;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        // customers = dbContext.Customers.ToList();
+        // employees = dbContext.Employees.ToList();
+
+        // For demo purposes only
+        //orders = dbContext.Orders.Include("Customer").Include("Employee").ToList();
+
+        users = new List<GetUserListModel>();
+        for (int i = 0; i < 100; i++)
+        {
+            users.Add(new GetUserListModel() { Name = "name",SurName = "Sname", Login = "sadas"});
+        }
+
+        // For production
+        //orders = dbContext.Orders.Include("Customer").Include("Employee");
+    }
+
+    async Task EditRow(GetUserListModel user)
+    {
+        // await userGrid.EditRow(order);
+    }
+   
+    void OnUpdateRow(GetUserListModel user)
+    {
+        //if (order == orderToInsert)
+        //{
+        //    orderToInsert = null;
+        //}
+
+        //dbContext.Update(order);
+
+        //// For demo purposes only
+        //order.Customer = dbContext.Customers.Find(order.CustomerID);
+        //order.Employee = dbContext.Employees.Find(order.EmployeeID);
+
+        // For production
+        //dbContext.SaveChanges();
+    }
+
+    async Task SaveRow(GetUserListModel user)
+    {
+        //if (order == orderToInsert)
+        //{
+        //    orderToInsert = null;
+        //}
+
+        //await userGrid.UpdateRow(order);
+    }
+
+    void CancelEdit(GetUserListModel user)
+    {
+        //if (order == orderToInsert)
+        //{
+        //    orderToInsert = null;
+        //}
+
+        //userGrid.CancelEditRow(order);
+
+        //// For production
+        //var orderEntry = dbContext.Entry(order);
+        //if (orderEntry.State == EntityState.Modified)
+        //{
+        //    orderEntry.CurrentValues.SetValues(orderEntry.OriginalValues);
+        //    orderEntry.State = EntityState.Unchanged;
+        //}
+    }
+
+    async Task DeleteRow(GetUserListModel user)
+    {
+        //if (order == orderToInsert)
+        //{
+        //    orderToInsert = null;
+        //}
+
+        //if (orders.Contains(order))
+        //{
+        //    dbContext.Remove<Order>(order);
+
+        //    // For demo purposes only
+        //    orders.Remove(order);
+
+        //    // For production
+        //    //dbContext.SaveChanges();
+
+        //    await ordersGrid.Reload();
+        //}
+        //else
+        //{
+        //    userGrid.CancelEditRow(order);
+        //}
+    }
+
+    AddUserModel userToInsert;
+
+    async Task InsertRow()
+    {
+        userToInsert = new AddUserModel();
+        // await userGrid.InsertRow(orderToInsert);
+    }
+
+    void OnCreateRow(GetUserListModel user)
+    {
+        //dbContext.Add(order);
+
+        // For demo purposes only
+        //order.Customer = dbContext.Customers.Find(order.CustomerID);
+        //order.Employee = dbContext.Employees.Find(order.EmployeeID);
+
+        // For production
+        //dbContext.SaveChanges();
+    }
+
 
 #line default
 #line hidden

@@ -83,3 +83,6 @@ D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\bin\Debug\netcoreapp3.1\RequestLib
 D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\bin\Debug\netcoreapp3.1\CommonLibrary.pdb
 D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\bin\Debug\netcoreapp3.1\LogLibrary.pdb
 D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\bin\Debug\netcoreapp3.1\RequestLibrary.pdb
+D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\bin\Debug\netcoreapp3.1\WebApplicationBlazerS.StaticWebAssets.xml
+D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\bin\Debug\netcoreapp3.1\Radzen.Blazor.dll
+D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll

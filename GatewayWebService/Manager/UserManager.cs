@@ -14,18 +14,18 @@ namespace GatewayWebService.Manager
 {
     public class UserManager
     {
-        public static UIResult<Page<GetUserModel>> GetUserList(UITableSortingAndFilterModel sortingAndFilterModel)
+        public static UIResult<Page<GetUserListModel>> GetUserList(UITableSortingAndFilterModel sortingAndFilterModel)
         {
             try
             {
                 using(DataBaseContext db = new DataBaseContext())
                 {
-                    Page<GetUserModel> pagedata = new Page<GetUserModel>();
+                    Page<GetUserListModel> pagedata = new Page<GetUserListModel>();
                     var dbuserlist = db.User.Where(u => !u.IsDeleted);
                     pagedata.TotalRows = dbuserlist.Count();
                     pagedata.List = dbuserlist.Skip(sortingAndFilterModel.PageSize * sortingAndFilterModel.PageIndex)
                                       .Take(sortingAndFilterModel.PageSize)
-                                      .Select(u => new GetUserModel() 
+                                      .Select(u => new GetUserListModel() 
                                       {
                                           Id = u.Id,
                                           Login = u.Login,
@@ -35,14 +35,14 @@ namespace GatewayWebService.Manager
                                       }).ToList();
 
 
-                    return new UIResult<Page<GetUserModel>>(UIResultStatus.Success, pagedata);
+                    return new UIResult<Page<GetUserListModel>>(UIResultStatus.Success, pagedata);
                 };
 
             }
             catch (Exception ex)
             {
                 LoggerClass.Log(LogLevel.ERROR, $"UserManager GetUserList EXCEPTION : {JsonConvert.SerializeObject(ex)}");
-                return new UIResult<Page<GetUserModel>>(UIResultStatus.Error, Errors.GetUserList_Error);
+                return new UIResult<Page<GetUserListModel>>(UIResultStatus.Error, Errors.GetUserList_Error);
             }
            
         }

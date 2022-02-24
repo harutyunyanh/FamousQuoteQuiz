@@ -76,36 +76,50 @@ using WebApplicationBlazerS.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\Pages\SignUp.razor"
+#line 10 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
 using WebApplicationBlazerS.Helper;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\Pages\SignUp.razor"
+#line 11 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
 using RequestLibrary;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\Pages\SignUp.razor"
+#line 12 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
 using CommonLibrary.DBModels;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\Pages\SignUp.razor"
+#line 13 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
 using CommonLibrary.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\Pages\SignUp.razor"
+#line 14 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
 using HttpMethod = CommonLibrary.Models.HttpMethod;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
+using Radzen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\_Imports.razor"
+using Radzen.Blazor;
 
 #line default
 #line hidden
@@ -120,7 +134,7 @@ using HttpMethod = CommonLibrary.Models.HttpMethod;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 25 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\Pages\SignUp.razor"
+#line 20 "D:\Gits\FamousQuoteQuiz\WebApplicationBlazerS\Pages\SignUp.razor"
        
     private string nameValue { get; set; }
     private string snameValue { get; set; }

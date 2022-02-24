@@ -9,10 +9,49 @@
 
 @if (forecasts == null)
 {
+    <RadzenButton Icon="add_circle_outline" style="margin-bottom: 10px" Text="Add New Order" Click="@InsertRow" Disabled=@(userToInsert != null) />
+    <RadzenDataGrid @ref="userGrid" AllowFiltering="true" AllowPaging="true" PageSize="5" AllowSorting="true" EditMode="DataGridEditMode.Single"
+                    Data="@users" TItem="GetUserListModel"  RowUpdate="@OnUpdateRow" RowCreate="@OnCreateRow">
+        <Columns>
+            <RadzenDataGridColumn TItem="GetUserListModel" Property="Id" Title="User ID" Width="120px" />
+            <RadzenDataGridColumn TItem="GetUserListModel" Property="Name" Title="Customer" Width="280px">
+                <EditTemplate Context="user">
+                    <RadzenDropDown @bind-Value="user.Id" Data="@users" TextProperty="CompanyName" ValueProperty="CustomerID" Style="width:100%; display: block;" />
+                </EditTemplate>
+            </RadzenDataGridColumn>
+
+            <RadzenDataGridColumn TItem="GetUserListModel" Context="sampleBlazorModelsSampleOrder" Filterable="false" Sortable="false" TextAlign="TextAlign.Center" Width="120px">
+                <Template Context="order">
+                    <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Class="m-1" Click="@(args => EditRow(order))" @onclick:stopPropagation="true">
+                    </RadzenButton>
+                </Template>
+                <EditTemplate Context="order">
+                    <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Primary" Class="m-1" Click="@((args) => SaveRow(order))">
+                    </RadzenButton>
+                    <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Class="m-1" Click="@((args) => CancelEdit(order))">
+                    </RadzenButton>
+                </EditTemplate>
+            </RadzenDataGridColumn>
+            <RadzenDataGridColumn TItem="GetUserListModel" Context="order" Filterable="false" Sortable="false" TextAlign="TextAlign.Center" Width="60px">
+                <Template Context="order">
+                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Small" Class="m-1" Click="@(args => DeleteRow(order))" @onclick:stopPropagation="true">
+                    </RadzenButton>
+                </Template>
+                <EditTemplate Context="order">
+                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Small" Class="m-1" Click="@(args => DeleteRow(order))">
+                    </RadzenButton>
+                </EditTemplate>
+            </RadzenDataGridColumn>
+        </Columns>
+    </RadzenDataGrid>
+
+
     <p><em>Loading...</em></p>
 }
 else
 {
+
+    <RadzenButton Text="Hi"></RadzenButton>
     <table class="table">
         <thead>
             <tr>
@@ -37,10 +76,135 @@ else
 }
 
 @code {
+    string text = "Hi";
     private WeatherForecast[] forecasts;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        //forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
     }
+
+
+
+
+    RadzenDataGrid<GetUserListModel> userGrid;
+    IList<GetUserListModel> users;
+    // IEnumerable<GetUserListModel> userdata;
+    //IEnumerable<Employee> employees;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        // customers = dbContext.Customers.ToList();
+        // employees = dbContext.Employees.ToList();
+
+        // For demo purposes only
+        //orders = dbContext.Orders.Include("Customer").Include("Employee").ToList();
+
+        users = new List<GetUserListModel>();
+        for (int i = 0; i < 100; i++)
+        {
+            users.Add(new GetUserListModel() { Name = "name",SurName = "Sname", Login = "sadas"});
+        }
+
+        // For production
+        //orders = dbContext.Orders.Include("Customer").Include("Employee");
+    }
+
+    async Task EditRow(GetUserListModel user)
+    {
+        // await userGrid.EditRow(order);
+    }
+   
+    void OnUpdateRow(GetUserListModel user)
+    {
+        //if (order == orderToInsert)
+        //{
+        //    orderToInsert = null;
+        //}
+
+        //dbContext.Update(order);
+
+        //// For demo purposes only
+        //order.Customer = dbContext.Customers.Find(order.CustomerID);
+        //order.Employee = dbContext.Employees.Find(order.EmployeeID);
+
+        // For production
+        //dbContext.SaveChanges();
+    }
+
+    async Task SaveRow(GetUserListModel user)
+    {
+        //if (order == orderToInsert)
+        //{
+        //    orderToInsert = null;
+        //}
+
+        //await userGrid.UpdateRow(order);
+    }
+
+    void CancelEdit(GetUserListModel user)
+    {
+        //if (order == orderToInsert)
+        //{
+        //    orderToInsert = null;
+        //}
+
+        //userGrid.CancelEditRow(order);
+
+        //// For production
+        //var orderEntry = dbContext.Entry(order);
+        //if (orderEntry.State == EntityState.Modified)
+        //{
+        //    orderEntry.CurrentValues.SetValues(orderEntry.OriginalValues);
+        //    orderEntry.State = EntityState.Unchanged;
+        //}
+    }
+
+    async Task DeleteRow(GetUserListModel user)
+    {
+        //if (order == orderToInsert)
+        //{
+        //    orderToInsert = null;
+        //}
+
+        //if (orders.Contains(order))
+        //{
+        //    dbContext.Remove<Order>(order);
+
+        //    // For demo purposes only
+        //    orders.Remove(order);
+
+        //    // For production
+        //    //dbContext.SaveChanges();
+
+        //    await ordersGrid.Reload();
+        //}
+        //else
+        //{
+        //    userGrid.CancelEditRow(order);
+        //}
+    }
+
+    AddUserModel userToInsert;
+
+    async Task InsertRow()
+    {
+        userToInsert = new AddUserModel();
+        // await userGrid.InsertRow(orderToInsert);
+    }
+
+    void OnCreateRow(GetUserListModel user)
+    {
+        //dbContext.Add(order);
+
+        // For demo purposes only
+        //order.Customer = dbContext.Customers.Find(order.CustomerID);
+        //order.Employee = dbContext.Employees.Find(order.EmployeeID);
+
+        // For production
+        //dbContext.SaveChanges();
+    }
+
 }

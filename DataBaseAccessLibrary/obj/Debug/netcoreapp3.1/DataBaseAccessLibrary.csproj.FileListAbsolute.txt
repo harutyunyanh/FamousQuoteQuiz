@@ -23,4 +23,3 @@ D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAc
 D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.dll
 D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.pdb
 D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.genruntimeconfig.cache
-D:\Gits\FamousQuoteQuiz\DataBaseAccessLibrary\obj\Debug\netcoreapp3.1\DataBaseAccessLibrary.csproj.AssemblyReference.cache

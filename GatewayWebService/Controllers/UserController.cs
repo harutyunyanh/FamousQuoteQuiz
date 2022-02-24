@@ -14,13 +14,13 @@ namespace GatewayWebService.Controllers
     {
 
         [HttpGet("{userId}")]
-        public UIResult<GetUserDetails> GetUserDetails(int userId)
+        public UIResult<GetUserDetailsModel> GetUserDetails(int userId)
         {
             return null;
             //return UserManager.GetUserList(sortingAndFilterModel);
         }
         [HttpPatch]
-        public UIResult<Page<GetUserModel>> GetUserList(UITableSortingAndFilterModel sortingAndFilterModel)
+        public UIResult<Page<GetUserListModel>> GetUserList(UITableSortingAndFilterModel sortingAndFilterModel)
         {
             return UserManager.GetUserList(sortingAndFilterModel);
         }
