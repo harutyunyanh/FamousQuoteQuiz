@@ -16,3 +16,4 @@ D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.Asse
 D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.csproj.CoreCompileInputs.cache
 D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.dll
 D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.pdb
+D:\Gits\FamousQuoteQuiz\CommonLibrary\obj\Debug\netcoreapp3.1\CommonLibrary.csproj.AssemblyReference.cache

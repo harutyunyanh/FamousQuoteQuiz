@@ -24,6 +24,11 @@ namespace GatewayWebService.Controllers
         {
             return LoginSignManager.ClientSign(signmodel);
         }
+        [HttpPatch("user/login")]
+        public UIResult<LoginResponse> UserLogin(LoginModel loginmodel)
+        {
+            return LoginSignManager.UserLogin(loginmodel);
+        }
     }
 
 }

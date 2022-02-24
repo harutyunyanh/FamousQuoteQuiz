@@ -44,11 +44,48 @@ namespace GatewayWebService.Manager
             }
             catch (Exception ex)
             {
-                LoggerClass.Log(LogLevel.ERROR, $"UserManager GetUserList EXCEPTION : {JsonConvert.SerializeObject(ex)}");
+                LoggerClass.Log(LogLevel.ERROR, $"LoginSignManager ClientLogin EXCEPTION : {JsonConvert.SerializeObject(ex)}");
                 return new UIResult<LoginResponse>(UIResultStatus.Error, Errors.To_Do);
             }
 
         }
+
+        public static UIResult<LoginResponse> UserLogin(LoginModel loginmodel)
+        {
+            try
+            {
+                using (DataBaseContext db = new DataBaseContext())
+                {
+                    string pass = HelperFunctions.Sha256(loginmodel.Password);
+
+                    User user = db.User.FirstOrDefault(c => c.Login == loginmodel.Login && c.Password == pass);
+
+                    if (user != null)
+                    {
+
+                        string Token = HelperFunctions.GenerateToken();
+
+
+                        //ToDo Implement in DB/AWS/Azure
+                        Tokens.userTokenList.Add(Token, user.Id);
+
+                        return new UIResult<LoginResponse>(UIResultStatus.Success, new LoginResponse() { Name = user.Name, SurName = user.SurName, Token = Token });
+                    }
+                    else
+                    {
+                        return new UIResult<LoginResponse>(UIResultStatus.Warning, Errors.Login_Faild);
+                    }
+                };
+
+            }
+            catch (Exception ex)
+            {
+                LoggerClass.Log(LogLevel.ERROR, $"LoginSignManager UserLogin EXCEPTION : {JsonConvert.SerializeObject(ex)}");
+                return new UIResult<LoginResponse>(UIResultStatus.Error, Errors.To_Do);
+            }
+
+        }
+
 
         public static UIResult<LoginResponse> ClientSign(SignModel signmodel)
         {

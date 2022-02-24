@@ -18,5 +18,24 @@ namespace GatewayWebService.Controllers
         {
             return UserManager.GetUserList(sortingAndFilterModel);
         }
+
+        [HttpPost]
+        public UIResult<string> AddUser(AddUserModel model)
+        {
+            return UserManager.AddUser(model);
+        }
+
+        [HttpDelete("{userId}")]
+        public UIResult<string> DeleteUser(int userId)
+        {
+            return null;
+            //return UserManager.GetUserList(sortingAndFilterModel);
+        }
+        [HttpPut("{userId}")]
+        public UIResult<string> EditUser(int userId)
+        {
+            return null;
+            //return UserManager.GetUserList(sortingAndFilterModel);
+        }
     }
 }
