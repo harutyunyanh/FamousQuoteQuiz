@@ -13,6 +13,12 @@ namespace GatewayWebService.Controllers
     public class UserController : BaseController
     {
 
+        [HttpGet("{userId}")]
+        public UIResult<GetUserDetails> GetUserDetails(int userId)
+        {
+            return null;
+            //return UserManager.GetUserList(sortingAndFilterModel);
+        }
         [HttpPatch]
         public UIResult<Page<GetUserModel>> GetUserList(UITableSortingAndFilterModel sortingAndFilterModel)
         {
