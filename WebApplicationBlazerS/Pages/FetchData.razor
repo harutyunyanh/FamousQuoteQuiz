@@ -11,7 +11,7 @@
 {
     <RadzenButton Icon="add_circle_outline" style="margin-bottom: 10px" Text="Add New Order" Click="@InsertRow" Disabled=@(userToInsert != null) />
     <RadzenDataGrid @ref="userGrid" AllowFiltering="true" AllowPaging="true" PageSize="5" AllowSorting="true" EditMode="DataGridEditMode.Single"
-                    Data="@users" TItem="GetUserListModel"  RowUpdate="@OnUpdateRow" RowCreate="@OnCreateRow">
+                    Data="@users" TItem="GetUserListModel" Count="@count"   RowUpdate="@OnUpdateRow" RowCreate="@OnCreateRow">
         <Columns>
             <RadzenDataGridColumn TItem="GetUserListModel" Property="Id" Title="User ID" Width="120px" />
             <RadzenDataGridColumn TItem="GetUserListModel" Property="Name" Title="Customer" Width="280px">
@@ -89,9 +89,7 @@ else
 
     RadzenDataGrid<GetUserListModel> userGrid;
     IList<GetUserListModel> users;
-    // IEnumerable<GetUserListModel> userdata;
-    //IEnumerable<Employee> employees;
-
+    int count;
     protected override void OnInitialized()
     {
         base.OnInitialized();
@@ -101,12 +99,15 @@ else
 
         // For demo purposes only
         //orders = dbContext.Orders.Include("Customer").Include("Employee").ToList();
-
+        var userss = new List<GetUserListModel>();
         users = new List<GetUserListModel>();
         for (int i = 0; i < 100; i++)
         {
-            users.Add(new GetUserListModel() { Name = "name",SurName = "Sname", Login = "sadas"});
+            userss.Add(new GetUserListModel() { Name = "name",SurName = "Sname", Login = "sadas"});
         }
+        users = userss.Take(13).ToList();
+        count = 10;
+        //userGrid.PageNumbersCount = 10;
 
         // For production
         //orders = dbContext.Orders.Include("Customer").Include("Employee");
@@ -116,7 +117,7 @@ else
     {
         // await userGrid.EditRow(order);
     }
-   
+
     void OnUpdateRow(GetUserListModel user)
     {
         //if (order == orderToInsert)

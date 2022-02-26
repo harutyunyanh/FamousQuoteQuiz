@@ -16,8 +16,7 @@ namespace GatewayWebService.Controllers
         [HttpGet("{userId}")]
         public UIResult<GetUserDetailsModel> GetUserDetails(int userId)
         {
-            return null;
-            //return UserManager.GetUserList(sortingAndFilterModel);
+            return UserManager.GetUserDetails(userId);
         }
         [HttpPatch]
         public UIResult<Page<GetUserListModel>> GetUserList(UITableSortingAndFilterModel sortingAndFilterModel)
@@ -34,14 +33,12 @@ namespace GatewayWebService.Controllers
         [HttpDelete("{userId}")]
         public UIResult<string> DeleteUser(int userId)
         {
-            return null;
-            //return UserManager.GetUserList(sortingAndFilterModel);
+            return UserManager.DeleteUser(userId);
         }
         [HttpPut("{userId}")]
-        public UIResult<string> EditUser(int userId)
+        public UIResult<string> EditUser(int userId,EditUserModel model)
         {
-            return null;
-            //return UserManager.GetUserList(sortingAndFilterModel);
+            return UserManager.EditUser(userId,model);
         }
     }
 }

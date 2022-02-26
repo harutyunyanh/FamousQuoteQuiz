@@ -4,6 +4,7 @@ using DataBaseAccessLibrary.FamousQuoteQuizDB.Models;
 using GatewayWebService.Helper;
 using GatewayWebService.Model;
 using LogLibrary;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -46,7 +47,6 @@ namespace GatewayWebService.Manager
             }
            
         }
-
         public static UIResult<string> AddUser(AddUserModel model)
         {
             try
@@ -74,5 +74,93 @@ namespace GatewayWebService.Manager
             }
 
         }
+        public static UIResult<string> EditUser(int userId, EditUserModel model)
+        {
+            try
+            {
+                using (DataBaseContext db = new DataBaseContext())
+                {
+                    User dbuser = db.User.FirstOrDefault(u => !u.IsDeleted && u.Id == userId);
+
+                    if(dbuser != null)
+                    {
+                        dbuser.Name = model.Name;
+                        dbuser.SurName = model.SurName;
+                        db.SaveChanges();
+                        return new UIResult<string>(UIResultStatus.Success, (string)null);
+
+                    }
+
+                    return new UIResult<string>(UIResultStatus.Warning, Errors.To_Do);
+                };
+
+            }
+            catch (Exception ex)
+            {
+                LoggerClass.Log(LogLevel.ERROR, $"UserManager AddUser EXCEPTION : {JsonConvert.SerializeObject(ex)}");
+                return new UIResult<string>(UIResultStatus.Error, Errors.To_Do);
+            }
+
+        }
+        public static UIResult<string> DeleteUser(int userId)
+        {
+            try
+            {
+                using (DataBaseContext db = new DataBaseContext())
+                {
+                    User dbuser = db.User.FirstOrDefault(u => !u.IsDeleted && u.Id == userId);
+
+                    if (dbuser != null)
+                    {
+                        dbuser.IsDeleted = true;
+                        db.SaveChanges();
+                        return new UIResult<string>(UIResultStatus.Success, (string)null);
+
+                    }
+
+                    return new UIResult<string>(UIResultStatus.Warning, Errors.To_Do);
+                };
+
+            }
+            catch (Exception ex)
+            {
+                LoggerClass.Log(LogLevel.ERROR, $"UserManager AddUser EXCEPTION : {JsonConvert.SerializeObject(ex)}");
+                return new UIResult<string>(UIResultStatus.Error, Errors.To_Do);
+            }
+
+        }
+        public static UIResult<GetUserDetailsModel> GetUserDetails(int userId)
+        {
+            try
+            {
+                using (DataBaseContext db = new DataBaseContext())
+                {
+                    User dbuser = db.User.Include(u => u.Quiz).FirstOrDefault(u => u.IsDeleted == false && u.Id == userId);
+                    if(dbuser != null)
+                    {
+                        GetUserDetailsModel detialsmodel = new GetUserDetailsModel();
+                        detialsmodel.Name = dbuser.Name;
+                        detialsmodel.SurName = dbuser.SurName;
+                        detialsmodel.Login = dbuser.Login;
+                        detialsmodel.CreationTime = dbuser.CreationTime;
+                        detialsmodel.QuizList = (List<GetQuizModel>)dbuser.Quiz.Where(q => !q.IsDeleted).Select(q => new GetQuizModel() { Text = q.Text, QuizTypeId = (QuizTypeEnum)q.QuizTypeId });
+
+                        return new UIResult<GetUserDetailsModel>(UIResultStatus.Success, detialsmodel);
+
+                    }
+
+                    return new UIResult<GetUserDetailsModel>(UIResultStatus.Warning, Errors.To_Do);
+                };
+
+            }
+            catch (Exception ex)
+            {
+                LoggerClass.Log(LogLevel.ERROR, $"UserManager GetUserList EXCEPTION : {JsonConvert.SerializeObject(ex)}");
+                return new UIResult<GetUserDetailsModel>(UIResultStatus.Error, Errors.To_Do);
+            }
+
+        }
+
+
     }
 }

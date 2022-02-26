@@ -155,9 +155,7 @@ using WebApplicationBlazerS.Data;
 
     RadzenDataGrid<GetUserListModel> userGrid;
     IList<GetUserListModel> users;
-    // IEnumerable<GetUserListModel> userdata;
-    //IEnumerable<Employee> employees;
-
+    int count;
     protected override void OnInitialized()
     {
         base.OnInitialized();
@@ -167,12 +165,15 @@ using WebApplicationBlazerS.Data;
 
         // For demo purposes only
         //orders = dbContext.Orders.Include("Customer").Include("Employee").ToList();
-
+        var userss = new List<GetUserListModel>();
         users = new List<GetUserListModel>();
         for (int i = 0; i < 100; i++)
         {
-            users.Add(new GetUserListModel() { Name = "name",SurName = "Sname", Login = "sadas"});
+            userss.Add(new GetUserListModel() { Name = "name",SurName = "Sname", Login = "sadas"});
         }
+        users = userss.Take(13).ToList();
+        count = 10;
+        //userGrid.PageNumbersCount = 10;
 
         // For production
         //orders = dbContext.Orders.Include("Customer").Include("Employee");
@@ -182,7 +183,7 @@ using WebApplicationBlazerS.Data;
     {
         // await userGrid.EditRow(order);
     }
-   
+
     void OnUpdateRow(GetUserListModel user)
     {
         //if (order == orderToInsert)
