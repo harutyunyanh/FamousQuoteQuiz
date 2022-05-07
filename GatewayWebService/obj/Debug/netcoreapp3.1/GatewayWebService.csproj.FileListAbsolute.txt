@@ -147,10 +147,13 @@ D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\GatewayWebServ
 D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\GatewayWebService.csproj.CoreCompileInputs.cache
 D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\GatewayWebService.MvcApplicationPartsAssemblyInfo.cache
 D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\staticwebassets\GatewayWebService.StaticWebAssets.Manifest.cache
-D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\staticwebassets\GatewayWebService.StaticWebAssets.xml
-D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\scopedcss\bundle\GatewayWebService.styles.css
 D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\GatewayWebService.RazorTargetAssemblyInfo.cache
 D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\GatewayWebService.csproj.CopyComplete
 D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\GatewayWebService.dll
 D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\GatewayWebService.pdb
 D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\GatewayWebService.genruntimeconfig.cache
+D:\Gits\FamousQuoteQuiz\GatewayWebService\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\Gits\FamousQuoteQuiz\GatewayWebService\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Gits\FamousQuoteQuiz\GatewayWebService\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Gits\FamousQuoteQuiz\GatewayWebService\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Gits\FamousQuoteQuiz\GatewayWebService\obj\Debug\netcoreapp3.1\GatewayWebService.MvcApplicationPartsAssemblyInfo.cs
