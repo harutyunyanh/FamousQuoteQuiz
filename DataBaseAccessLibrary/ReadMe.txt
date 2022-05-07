@@ -14,20 +14,6 @@
 		To:
 				optionsBuilder.UseSqlServer(DataBaseConfigurator.ConnectionString);
 	
-Initialization of the Stored Procedure:
-	1. Add stored procedure's return type model file in "StoredProcedures" folder
-		!NOTES:
-			Make sure to change namespace, see SP_ExampleModel
-			Make sure you save the Stored procedure core as well (to make it easy to track changes)
-	2. Add property in DataBaseContext class file in "StoredProcedures" folder
-		public virtual DbSet<SP_ExampleModel> SP_ExampleModelProperty { get; set; }
-	3. Use it:
-		using (DataBaseContext db = new DataBaseContext())
-        {
-            SP_ExampleModel em = db.SP_ExampleModelProperty.FromSql($"EXEC SP_ExampleModel_Get @ClientId={id}").FirstOrDefault();
-            return em;
-        }
-
 To Integrate:
 	1. Add "DataAccessLibrary" referance to project
 	2. Add connection string to "appsettings.json" file:
@@ -39,5 +25,5 @@ To Integrate:
 	4. Use it:
 		using (DataBaseContext db = new DataBaseContext())
         {
-            List<AccountTypes> at = db.AccountTypes.ToList();
+            List<Users> at = db.Users.ToList();
         }

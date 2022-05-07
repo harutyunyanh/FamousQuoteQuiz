@@ -11,3 +11,4 @@ namespace CommonLibrary.Models
         public Error(string code, string message) { Code = code; Message = message; }
     }
 }
+

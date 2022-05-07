@@ -13,7 +13,6 @@ namespace DataBaseAccessLibrary.FamousQuoteQuizDB.Models
         {
             History = new HashSet<History>();
         }
-
         public int Id { get; set; }
         public string Text { get; set; }
         public int QuizTypeId { get; set; }

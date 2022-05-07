@@ -50,7 +50,6 @@ namespace GatewayWebService
             LoggerClass._logger = logger;
             LoggerClass.Log(LogLibrary.LogLevel.INFO, $"Environment: {Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}");
 
-
         }
     }
 }

@@ -5,7 +5,6 @@ namespace LogLibrary
     public static class LoggerClass
     {
         public static ILogger _logger { get; set; }
-
         public static void Log(LogLevel level, string message, string code = "Default", string sessionId = "Default")
         {
             switch (level)

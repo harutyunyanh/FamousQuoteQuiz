@@ -13,7 +13,6 @@ namespace DataBaseAccessLibrary.FamousQuoteQuizDB.Models
         {
             Quiz = new HashSet<Quiz>();
         }
-
         public int Id { get; set; }
         public string Type { get; set; }
 

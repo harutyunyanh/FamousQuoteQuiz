@@ -13,7 +13,6 @@ namespace DataBaseAccessLibrary.FamousQuoteQuizDB.Models
         public string Text { get; set; }
         public int QuizId { get; set; }
         public bool IsDeleted { get; set; }
-
         public virtual Quiz Quiz { get; set; }
     }
 }

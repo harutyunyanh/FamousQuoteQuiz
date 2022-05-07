@@ -15,7 +15,6 @@ namespace DataBaseAccessLibrary.FamousQuoteQuizDB.Models
         public bool IsRight { get; set; }
         public int AnswerId { get; set; }
         public DateTime CreationDate { get; set; }
-
         public virtual Client Client { get; set; }
         public virtual Quiz Quiz { get; set; }
     }

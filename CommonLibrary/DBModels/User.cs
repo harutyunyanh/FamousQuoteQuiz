@@ -14,6 +14,7 @@ namespace CommonLibrary.DBModels
         public DateTime CreationTime { get; set; }
         public List<GetQuizModel> QuizList { get; set; }
     }
+    
     public class GetUserListModel
     {
         public int Id { get; set; }

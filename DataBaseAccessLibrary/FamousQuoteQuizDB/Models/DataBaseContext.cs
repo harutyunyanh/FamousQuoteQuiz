@@ -16,7 +16,6 @@ namespace DataBaseAccessLibrary.FamousQuoteQuizDB.Models
         public DataBaseContext()
         {
         }
-
         public DataBaseContext(DbContextOptions<DataBaseContext> options)
             : base(options)
         {

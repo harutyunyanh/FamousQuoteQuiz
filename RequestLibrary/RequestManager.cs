@@ -90,47 +90,6 @@ namespace RequestLibrary
         }
 
         /// <summary>
-        /// Used to make web requests to external resourses and returns generic object
-        /// </summary>
-        /// <param name="method">Request Method (enum)</param>
-        /// <param name="url">Request URL</param>
-        /// <param name="body">Request Body (optional)</param>
-        public static UIResult<T> Make<T>(HttpMethod method, string url, object body = null, string basicAuthorizationToken = null, string[][] headers = null)
-        {
-            try
-            {
-                LoggerClass.Log(LogLevel.DEBUG, $"RequestLibrary :: RequestManager :: Make<T> :: Invoced with params => method: { method }, url: { url }, body: { JsonConvert.SerializeObject(body) }");
-                UIResult<string> result = Make(method, url, body, basicAuthorizationToken, headers);
-                LoggerClass.Log(LogLevel.TRACE, $"RequestLibrary :: RequestManager :: Make<T> :: Response from [Make] function: { JsonConvert.SerializeObject(result) }");
-                if (result.IsSuccessful())
-                {
-                    try
-                    {
-                        T responseObject = JsonConvert.DeserializeObject<T>(result.Data);
-                        LoggerClass.Log(LogLevel.DEBUG, $"RequestLibrary :: RequestManager :: Make<T> :: Successfully finished: { JsonConvert.SerializeObject(responseObject) }");
-                        return new UIResult<T>(UIResultStatus.Success, responseObject);
-                    }
-                    catch (Exception)
-                    {
-                        LoggerClass.Log(LogLevel.WARN, "RequestLibrary :: RequestManager :: Make<T> :: Unable to parse json to class specified");
-                        return new UIResult<T>(UIResultStatus.Warning, Errors.RequestLibrary_Request_Make_JsonToObjectParseFailure);
-                    }
-                }
-                else
-                {
-                    LoggerClass.Log(LogLevel.WARN, "RequestLibrary :: RequestManager :: Make<T> :: Make function call failed");
-                    return new UIResult<T>(result);
-                }
-            }
-            catch (Exception ex)
-            {
-                LoggerClass.Log(LogLevel.ERROR, $"RequestLibrary :: RequestManager :: Make<T> :: UNHANDELED CASE {ex}");
-                return new UIResult<T>(UIResultStatus.Error, Errors.RequestLibrary_Request_Make_Exception);
-            }
-        }
-
-
-        /// <summary>
         /// Used to make web requests to internal resourses and returns generic object
         /// </summary>
         /// <param name="method">Request Method (enum)</param>
